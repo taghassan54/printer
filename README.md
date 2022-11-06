@@ -25,10 +25,12 @@ import 'package:all_printer/all_printer.dart';
  
  String path = await _allPrinterPlugin.getDownloadPath("unique name");
  
-    bool isDone = await _allPrinterPlugin.download(
+ bool isDone = await _allPrinterPlugin.download(
         dio,
         "https://raw.githubusercontent.com/taghassan54/printer/main/printing.bmp",
         path);
+        
+await _allPrinterPlugin.printImage(imagePath: path) ?? '';
         
 ```
   #      
@@ -62,18 +64,20 @@ import 'package:all_printer/all_printer.dart';
           "24": "Thanks you for try our Flutter base POS"
         };
         
-         invoice['logoPath'] = path;
+         invoice['logoPath'] = path; // from print image section 
          
          await _allPrinterPlugin.print(invoice: invoice) ?? '';
          
          await _allPrinterPlugin.printSingleLine(line: "this normal text !") ??
             '';
-            
+```
+#
+```            
          _allPrinterPlugin.printQrCode(qrData: "data");
-               
-               
-         await _allPrinterPlugin.printImage(imagePath: path) ?? '';
-                 
+
+```
+#
+```
           _allPrinterPlugin.printReyFinish();
         
 ```
