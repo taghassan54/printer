@@ -19,7 +19,6 @@ import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 import androidx.core.content.ContextCompat as Compat
-import com.imin.library.SystemPropManager
 
 
 /** AllPrinterPlugin */
@@ -51,12 +50,11 @@ class AllPrinterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
         when (call.method) {
             "getPlatformVersion" -> {
 
-                val deviceModel: String = SystemPropManager.getModel()
-                val brand = SystemPropManager.getBrand()
+//                val deviceModel: String = SystemPropManager.getModel()
+//                val brand = SystemPropManager.getBrand()
 
                 result.success(
-                    "Android ${android.os.Build.VERSION.RELEASE} \n" +
-                            " Device Name : ${getDeviceName()} \n device Model :   $deviceModel \n Brand : $brand"
+                    "Android ${android.os.Build.VERSION.RELEASE} \n"
                 )
 
             }
