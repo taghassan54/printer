@@ -29,7 +29,7 @@ import 'package:all_printer/all_printer.dart';
           "0": "The Quick Brown fox jumped over The Lazy Dog",
           "1": "Date:2022-01-30 10:25:35",
           "2": "Name: Altkamul Printer Test",
-          "3": "Merchent ID: $merchantId",
+          "3": "Merchent ID: 10005000",
           "4": "Terminal ID: 667766776",
           "5": "Transaction ID: 10000001",
           "6": "Voucher No: 22-003111",
