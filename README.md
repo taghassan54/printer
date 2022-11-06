@@ -24,7 +24,7 @@ import 'package:all_printer/all_printer.dart';
  
     bool isDone = await _allPrinterPlugin.download(
         dio,
-        "${imageUrl}/printing.bmp",
+        "https://raw.githubusercontent.com/taghassan54/printer/main/printing.bmp",
         path);
         
         dynamic  invoice = {
