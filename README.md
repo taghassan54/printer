@@ -16,7 +16,7 @@ import 'package:all_printer/all_printer.dart';
 
  final _allPrinterPlugin = AllPrinter();
  
- Dio() dio =Dio();
+ Dio dio =Dio();
  
  for image print use this :
  
