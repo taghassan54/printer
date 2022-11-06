@@ -60,11 +60,11 @@ import 'package:all_printer/all_printer.dart';
          await _allPrinterPlugin.printSingleLine(line: "this normal text !") ??
             '';
             
-               _allPrinterPlugin.printQrCode(qrData: "data");
+         _allPrinterPlugin.printQrCode(qrData: "data");
                
                
-                 await _allPrinterPlugin.printImage(imagePath: path) ?? '';
+         await _allPrinterPlugin.printImage(imagePath: path) ?? '';
                  
-                   _allPrinterPlugin.printReyFinish();
+          _allPrinterPlugin.printReyFinish();
         
 ```
