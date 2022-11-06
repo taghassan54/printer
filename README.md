@@ -18,9 +18,9 @@ import 'package:all_printer/all_printer.dart';
  
  Dio dio =Dio();
  
- ```
+```
  
- ```
+```
  for image print use this :
  
  String path = await _allPrinterPlugin.getDownloadPath("unique name");
