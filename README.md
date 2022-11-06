@@ -21,6 +21,9 @@ import 'package:all_printer/all_printer.dart';
 ```
  #
 ```
+
+>  image  width=348  height=133 depth =24  black and white
+
  for image print use this :
  
  String path = await _allPrinterPlugin.getDownloadPath("unique name");
