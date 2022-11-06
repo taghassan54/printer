@@ -18,6 +18,9 @@ import 'package:all_printer/all_printer.dart';
  
  Dio dio =Dio();
  
+ ```
+ 
+ ```
  for image print use this :
  
  String path = await _allPrinterPlugin.getDownloadPath("unique name");
@@ -26,6 +29,10 @@ import 'package:all_printer/all_printer.dart';
         dio,
         "https://raw.githubusercontent.com/taghassan54/printer/main/printing.bmp",
         path);
+        
+        ```
+        
+        ```
         
         dynamic  invoice = {
           "0": "The Quick Brown fox jumped over The Lazy Dog",
